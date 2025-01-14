@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="myForm">
+	<h2  class="From-header"> JavaScript Form Validation</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="More then 3 characters long">
+    <br><br>
+    <!--  -->
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" placeholder="Email Must be valid">
+    <br><br>
+     <!-- Date Input -->
+	 <label for="dob">Date of Birth</label>
+	 <input type="date" id="dob" name="dob">
+	 <br><br>
+
+    <label for="password">Password :</label>
+    <input type="password" id="password" name="password" placeholder="Must Be 8-16 characters">
+    <br><br>
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <!-- Select Dropdown -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="">Select your country</option>
+      <option value="us">United States</option>
+      <option value="BD">Bangladesh</option>
+      <option value="uk">United Kingdom</option>
+      <option value="au">Australia</option>
+      <option value="Ca">Canada</option>
+    </select>
+    <br><br>
+
+    <div class="button-group">
+      <div class="button1">
+        <button class="button" type="submit">Submit</button>
+        <p id="errorMessage" style="color: red;"></p>
+      </div>
+      <div class="button2">
+        <button class="button" type="reset">Reset</button>
+        <p id="errorMessage" style="color: red;"></p>
+      </div>
+    </div> 
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
